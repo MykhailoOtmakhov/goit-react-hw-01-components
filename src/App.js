@@ -5,6 +5,10 @@ import user from './user.json';
 // import Statistics from './components/statisticalData/Statistics'
 import statisticalData from './statistical-data.json'
 import StatisticsList from './components/statisticalData/StatisticsList';
+import FriendsList from './components/friendsList/FriendsList';
+import friends from './friends.json'
+import TransactionHistory from './components/transactionHistory/TransactionHistory'
+import transactions from './transactions.json'
 
 
 function App() {
@@ -21,6 +25,9 @@ function App() {
 
     <StatisticsList items = {statisticalData} />
 
+    <FriendsList friends = {friends}/>
+
+    <TransactionHistory items={transactions} />
     </div>
     
   );
