@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 export default
  function Statistics (props){
@@ -9,3 +10,9 @@ return(
     </React.Fragment>
  
 )}
+
+Statistics.propTypes = {
+  key: PropTypes.string,
+  title: PropTypes.string,
+  stats: PropTypes.number,
+}

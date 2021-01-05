@@ -1,4 +1,5 @@
 // import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import FriendListItem from './FriendsListItem'
 function FriendsList ({friends}){
     return(
@@ -14,6 +15,10 @@ function FriendsList ({friends}){
         ))}
         </ul>
     )
+}
+
+FriendsList.propTypes = {
+    id: PropTypes.number,
 }
 
 export default FriendsList;

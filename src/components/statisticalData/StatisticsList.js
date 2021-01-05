@@ -1,4 +1,6 @@
-import Statistics from './Statistics'
+import Statistics from './Statistics';
+import PropTypes from 'prop-types';
+
 
 function StatisticsList ({ items }){
 return(
@@ -13,6 +15,10 @@ return(
     ))}
 </ul>
 )
+}
+
+StatisticsList.propTypes = {
+    id: PropTypes.string.isRequired,
 }
 
 export default StatisticsList;

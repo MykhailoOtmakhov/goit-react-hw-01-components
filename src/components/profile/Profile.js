@@ -35,10 +35,16 @@ import PropTypes from 'prop-types';
   }
 
   Profile.propTypes = {
-      name: PropTypes.string,
-      tag: PropTypes.string,
+      name: PropTypes.string.isRequired,
+      tag: PropTypes.string.isRequired,
       location: PropTypes.string,
-    //   stats
+      avatar: PropTypes.string,
+      stats: PropTypes.arrayOf(
+        PropTypes.shape({
+          followers: PropTypes.number,
+          views: PropTypes.number,
+          likes: PropTypes.number,
+      }))
   }
 
 
