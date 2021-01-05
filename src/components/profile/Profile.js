@@ -1,38 +1,51 @@
 import PropTypes from 'prop-types';
+import './src/components/profile/Profile.module.css';
 
  function Profile (props){
     const {name, tag, location, avatar, stats} = props;
     // console.log(props);
     return (
-    <div class="profile">
-      <div class="description">
+    <div className="profile">
+      <div className="Description" style={{color: 'green'}}>
         <img
           src={avatar}
           alt="Аватар пользователя"
-          class="avatar"
+          className="avatar"
         />
-        <p class="name">{name}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
+        <p className="name">{name}</p>
+        <p className="tag">{tag}</p>
+        <p className="location">{location}</p>
       </div>
     
-      <ul class="stats" >
+      <ul className="stats" >
         <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{stats.followers}</span>
+          <span className="label">Followers</span>
+          <span className="quantity">{stats.followers}</span>
         </li>
         <li>
-          <span class="label">Views</span>
-          <span class="quantity">{stats.views}</span>
+          <span className="label">Views</span>
+          <span className="quantity">{stats.views}</span>
         </li>
         <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{stats.likes}</span>
+          <span className="label">Likes</span>
+          <span className="quantity">{stats.likes}</span>
         </li>
       </ul>
     </div>
     )
   }
+
+  Profile.defaultProps = {
+    avatar:
+    "https://dummyimage.com/640x480/2a2a2a/ffffff&text=Product+image+placeholder"
+  
+  };  //   stats: PropTypes.arrayOf(
+  //     PropTypes.shape({
+  //       followers: 0,
+  //       views: 0,
+  //       likes: 0,
+  //   }))  
+  // };
 
   Profile.propTypes = {
       name: PropTypes.string.isRequired,

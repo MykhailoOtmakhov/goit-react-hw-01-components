@@ -12,7 +12,10 @@ return(
 )
 }
 
-FriendsListItem.propTypes = {
+FriendsListItem.defaultProps = {
+    avatar: 'https://dummyimage.com/640x480/2a2a2a/ffffff&text=Product+image+placeholder',
+}
+    FriendsListItem.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool,
