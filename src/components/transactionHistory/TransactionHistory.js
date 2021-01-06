@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './TransactionHistory.module.css'
 
 export default
 function TransactionHistory ({items}) {
     return(
         <React.Fragment>
-            <table class="transaction-history">
-                <thead>
+            <table className={styles.transactionHistory}>
+                <thead className={styles.title}>
                    <tr>
-                     <th>Type</th>
+                     <th >Type</th>
                      <th>Amount</th>
                      <th>Currency</th>
                    </tr>

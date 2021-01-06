@@ -1,0 +1,29 @@
+.statListTitle {
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px 50px;
+    margin: auto;
+    width: 200px;
+    border: solid 1px black;
+}
+
+.statList {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid 1px black; */
+    padding: 0px 0px;
+    margin: auto;
+    /* color: red; */
+}
+
+.statListItem {
+    display: block;
+    width: 20%;
+    height: 100%;
+    flex-direction: row;
+    border: solid 1px black;
+}

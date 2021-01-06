@@ -1,0 +1,11 @@
+.status {
+    font-weight: bold;
+    font-size: xx-large;
+}
+.avatar {
+    color: green;
+}
+.name {
+    color: purple;
+    font-size: xx-large;
+}

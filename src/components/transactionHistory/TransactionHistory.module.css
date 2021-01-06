@@ -1,0 +1,17 @@
+table {
+    margin: auto;
+}
+table th,
+table td {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #2a2a2a;
+    background-color: sandybrown;
+}
+
+.transactionHistory {
+    padding: auto;
+    color: green;
+}
