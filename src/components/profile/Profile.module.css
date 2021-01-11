@@ -42,34 +42,4 @@
     color: grey;
 }
 
-.stats {
-    display: flex;
-    /* width: 100%; */
-    box-sizing: border-box;
-    background-color: grey;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-}
 
-.statsItem {
-    display: flex;
-    width: 33.33%;
-    align-items: center;
-    padding: 10px;
-    /* justify-content: center; */
-    flex-direction: column;
-    border: solid 1px black;
-    box-sizing: border-box;
-}
-
-.label {
-    font-style: italic;
-    font-size: 14px;
-    color: lightgray;
-}
-
-.quantity {
-    font-weight: bold;
-}

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './TransactionHistory.module.css'
-
 export default
 function TransactionHistory ({items}) {
     return(
@@ -14,7 +13,6 @@ function TransactionHistory ({items}) {
                      <th>Currency</th>
                    </tr>
                  </thead>
-
                  <tbody>
                     {items.map(item =>  (
                      <tr key={item.id}>
@@ -24,17 +22,18 @@ function TransactionHistory ({items}) {
                      </tr>
                      ))
                     }
-
                 </tbody>
             </table>
         </React.Fragment>
     )
 }
-
-
-        TransactionHistory.propTypes = {
-            id: PropTypes.string.isRequired,
-            type: PropTypes.string.isRequired,
-            amount: PropTypes.string.isRequired,
-            currency: PropTypes.string.isRequired
-        }
+TransactionHistory.propTypes = {
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string,
+            type: PropTypes.string,
+            amount: PropTypes.string,
+            currency: PropTypes.string,
+        }),
+    ),
+}

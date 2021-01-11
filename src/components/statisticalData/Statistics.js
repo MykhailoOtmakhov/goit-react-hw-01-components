@@ -1,19 +1,17 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import styles from './Statistics.module.css'
+import styles from './Statistics.module.css';
+import itemsPropTypes from './itemsPropTypes'
 export default
- function Statistics (props){
-const {key, title, stats}=props;
-return(
-  <React.Fragment key={key}>
+function Statistics ({id, title, stats}){
+  return(
+    <li className={styles.statListItem}
+        key={id}>
       <span className={styles.label}>{title}</span>
       <span className={styles.percentage}>{stats}</span>
-    </React.Fragment>
- 
-)}
-
-Statistics.propTypes = {
-  key: PropTypes.string,
-  title: PropTypes.string,
-  stats: PropTypes.number,
+    </li>
+  )
 }
+Statistics.defaultProps={
+  stats: 0,
+}
+Statistics.propTypes = itemsPropTypes

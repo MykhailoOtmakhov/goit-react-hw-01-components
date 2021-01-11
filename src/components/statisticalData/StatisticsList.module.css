@@ -20,10 +20,4 @@
     /* color: red; */
 }
 
-.statListItem {
-    display: block;
-    width: 20%;
-    height: 100%;
-    flex-direction: row;
-    border: solid 1px black;
-}
+

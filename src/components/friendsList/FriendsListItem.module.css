@@ -1,3 +1,13 @@
+.friendListItem {
+    display: flex;
+    border: solid 1px grey;
+    width: 300px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: auto;
+     */
+}
 .status {
     font-weight: bold;
     font-size: xx-large;

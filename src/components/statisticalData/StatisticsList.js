@@ -1,29 +1,25 @@
 import Statistics from './Statistics';
-import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './StatisticsList.module.css'
-
-
+import itemsPropTypes from './itemsPropTypes'
 function StatisticsList ({ items }){
 return(
-    <React.Fragment className={styles.stat}>
-<span className={styles.statListTitle}> Upload stats</span>
-<ul className={styles.statList}>
-    {items.map(item => (
-        <li className={styles.statListItem} key={item.id}>
-            <Statistics       
-                title={item.label} 
-                stats={item.percentage} 
-            />
-        </li>
-    ))}
-</ul>
-</React.Fragment>
+    <React.Fragment>
+        <span className={styles.statListTitle}>
+            Upload stats
+        </span>
+        <ul className={styles.statList}>
+            {items.map(item => (
+                <Statistics    
+                        key={item.id}
+                        title={item.label} 
+                        stats={item.percentage} 
+                />
+            ))}
+        </ul>
+    </React.Fragment>
 )
 }
-
-StatisticsList.propTypes = {
-    id: PropTypes.string.isRequired,
-}
-
+StatisticsList.propTypes = itemsPropTypes
 export default StatisticsList;
+

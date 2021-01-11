@@ -1,10 +1,16 @@
+.statListItem {
+    display: block;
+    width: 20%;
+    height: 100%;
+    flex-direction: row;
+    border: solid 1px black;
+}
 .label {
     display: block;
     font-size: 14px;
     text-align: center;
     /* color: red; */
 }
-
 .percentage {
     display: flex;
     align-items: center;
