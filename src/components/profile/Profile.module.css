@@ -1,7 +1,4 @@
-/* export Default  */
 .profile {
-    /* display: flex; */
-    /* justify-content: center; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     flex-wrap: wrap;
     width: 300px;
@@ -10,11 +7,7 @@
     border-radius: 2px;
     padding: 50px 0px;
     margin: auto;
-    box-sizing: border-box;
-    /* align-items: center; */
-    /* width: 600px; */
 }
-
 .description {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
@@ -22,24 +15,18 @@
     justify-content: center;
     align-items: center;
 }
-
 .avatar {
     width: 100px;
     height: 100px;
     border-radius: 100%;
 }
-
 .name {
     font-size: large;
     font-weight: bold;
 }
-
 .tag {
     color: grey;
 }
-
 .location {
     color: grey;
 }
-
-

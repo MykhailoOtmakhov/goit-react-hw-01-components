@@ -8,16 +8,11 @@
     width: 200px;
     border: solid 1px black;
 }
-
 .statList {
     display: flex;
     width: 300px;
     justify-content: space-around;
     align-items: center;
-    /* border: solid 1px black; */
     padding: 0px 0px;
     margin: auto;
-    /* color: red; */
 }
-
-

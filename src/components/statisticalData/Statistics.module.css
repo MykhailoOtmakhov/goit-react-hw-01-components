@@ -9,15 +9,10 @@
     display: block;
     font-size: 14px;
     text-align: center;
-    /* color: red; */
 }
 .percentage {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* border: solid 1px black; */
-
     text-align: center;
-    /* color: red; */
 }

@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
 import ProfileStatsItem from './ProfileStatsItem'
 function Profile ({name, tag, location, avatar, stats}){
-  //  const {name, tag, location, avatar, stats} = props;
    return (
      <div className={styles.profile}>
          <div className={styles.description}>
@@ -26,16 +25,21 @@ function Profile ({name, tag, location, avatar, stats}){
 Profile.defaultProps = {
   avatar: './avatar.jpg',
   location: "Earth",    
+  stats:{
+    followers: 0,
+    views: 0,
+    likes:0,
+  }
 };
-Profile.propTypes = {
+Profile.propTypes =  {
     name: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string,
     avatar: PropTypes.string,
     stats: PropTypes.shape({
-      followers: 0,
-      views: 0,
-      likes: 0,
+      followers: PropTypes.number,
+      views: PropTypes.number,
+      likes:PropTypes.number,
   })
 }
 export default Profile;

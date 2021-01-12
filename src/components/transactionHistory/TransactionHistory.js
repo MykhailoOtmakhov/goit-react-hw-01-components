@@ -27,6 +27,14 @@ function TransactionHistory ({items}) {
         </React.Fragment>
     )
 }
+TransactionHistory.defaultProps = {
+    items:{
+        id:"---",
+        type:"---",
+        amount: "---",
+        currency: "---",
+    }
+}
 TransactionHistory.propTypes = {
     items: PropTypes.arrayOf(
         PropTypes.shape({
